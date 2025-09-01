@@ -2,9 +2,9 @@ import LocationCard from "../Components/LocationCard";
 
 const Location = () => {
   return (
-    <div>
+    <div className="md:py-8">
       {/* HERO BANNER */}
-      <section className="h-[60vh] bg-slate-900 flex items-center justify-center relative overflow-hidden">
+      <section className="md:h-[60vh] h-[55vh] bg-slate-900 flex items-center justify-center relative overflow-hidden">
         {/* Geometric background pattern */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-red-900/20 to-transparent"></div>
@@ -12,7 +12,7 @@ const Location = () => {
         </div>
 
         {/* Floating geometric shapes */}
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 border-2 border-red-500 rotate-45 transform"></div>
+        <div className="absolute md:top-1/4 left-1/4 w-32 h-32 border-2 border-red-500 rotate-45 transform"></div>
         <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-red-500 rotate-12 transform"></div>
         <div className="absolute top-1/2 right-1/3 w-16 h-16 border border-white/20 rounded-full"></div>
 

@@ -30,7 +30,7 @@ const Gift = () => {
       {/* Header Section */}
       <section className="bg-white py-16 px-4">
         <div className="container mx-auto text-center max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800 font-[pacifo]">
             GIFTS & SUPPORT
           </h1>
           <div className="flex items-center justify-center mb-6">
@@ -179,7 +179,7 @@ const Gift = () => {
       {/* Thank You Section */}
       <section className="bg-red-500 text-white py-16 px-4">
         <div className="container mx-auto text-center max-w-3xl">
-          <h3 className="text-2xl md:text-3xl font-bold mb-6">
+          <h3 className="text-2xl md:text-3xl  mb-6 font-oswald">
             THANK YOU FROM OUR HEARTS
           </h3>
           <p className="text-lg leading-relaxed mb-6">

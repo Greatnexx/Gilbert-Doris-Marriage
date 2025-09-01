@@ -4,12 +4,11 @@ const Story = () => {
   return (
     <div>
       <section
-        className="relative bg-center flex items-center justify-center text-white text-center px-4"
+        className="relative bg-center flex items-center justify-center text-white text-center px-4 sm:px-6 lg:px-8 h-[70vh] sm:h-[90vh] lg:h-screen sm:min-h-[500px] lg:min-h-[600px]"
         style={{
           backgroundImage: "url('/assets/images/proposal.jpg')",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
-          height: "100vh", // reduce height so it doesn’t stretch full screen
           width: "100%",
         }}
       >
@@ -35,14 +34,12 @@ const Story = () => {
             <i className="fa fa-heart text-white text-sm" />
             <span className="w-16 h-[2px] bg-white" />
           </div>
-
-       
         </div>
       </section>
 
-      <section className="bg-white text-white p-16">
+      <section className="bg-white text-white p-4 md:p-16">
         {/* SECTION TITLE */}
-        <div className="flex flex-col md:flex-row justify-center gap-8 text-gray-700 max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-center gap-8 text-gray-700 md:max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row text-left w-full gap-8">
             <div className="md:w-1/2">
               <p className="mb-4 text-base leading-relaxed">
@@ -108,12 +105,12 @@ const Story = () => {
             <div className="flex items-center justify-center mb-6">
               <span className="w-16 h-[1px] bg-white"></span>
               <div className="mx-3 flex space-x-2 items-center">
-                <div className="w-4 h-4 bg-pink-500 rounded-full"></div>
+                <div className="w-4 h-4 bg-red-500 rounded-full"></div>
                 <div className="w-4 h-4 bg-white rounded-full"></div>
               </div>
               <span className="w-16 h-[1px] bg-white"></span>
             </div>
-            <p className="text-lg leading-relaxed">
+            <p className="md:text-lg leading-relaxed">
               In that perfect moment, surrounded by the golden hour light and
               the scent of blooming flowers, time stood still. Her tears of joy,
               her whispered "yes," and the way she threw her arms around me— it
@@ -134,7 +131,7 @@ const Story = () => {
           <div className="flex items-center justify-center mb-6">
             <span className="w-16 h-[1px] bg-gray-300"></span>
             <div className="mx-3 flex space-x-2 items-center">
-              <div className="w-4 h-4 bg-pink-500 rounded-full"></div>
+              <div className="w-4 h-4 bg-red-500 rounded-full"></div>
               <div className="w-4 h-4 bg-gray-400 rounded-full"></div>
             </div>
             <span className="w-16 h-[1px] bg-gray-300"></span>
@@ -142,25 +139,40 @@ const Story = () => {
         </div>
 
         {/* Paragraphs */}
-          <div className="container mx-auto flex flex-col md:flex-row gap-10 md:gap-20 mb-10 max-w-6xl">
-            <div className="md:w-1/2">
-                <p className="text-base leading-relaxed mb-4">
-                    The moment I finished asking the question, time seemed to freeze. Doris's eyes filled with tears—the good kind that sparkle like diamonds in the fading sunlight. For what felt like an eternity, she just stared at me, and I could see her processing the magnitude of what I had just asked.
-                </p>
-                <p className="text-base leading-relaxed">
-                    Then, without saying a word, she threw her arms around me with such force that we nearly tumbled over together. Her embrace was everything—relief, joy, love, and promise all wrapped into one perfect moment. I could feel her heart racing against mine, and I knew that whatever her answer would be, this hug said everything.
-                </p>
-            </div>
-            <div className="md:w-1/2">
-                <p className="text-base leading-relaxed mb-4">
-                    We stayed like that for what felt like hours but was probably only minutes, holding each other as the reality of the moment washed over us. She was laughing and crying at the same time, and honestly, so was I. It was messy and beautiful and absolutely perfect—just like our love story.
-                </p>
-                <p className="text-base leading-relaxed">
-                    When she finally pulled back to look at me, her face was glowing with pure happiness. Her smile was brighter than any sunset, more beautiful than any ring I could have chosen. In that embrace, I felt our future beginning—two hearts deciding to beat as one for the rest of our lives.
-                </p>
-            </div>
+        <div className="container mx-auto flex flex-col md:flex-row gap-10 md:gap-20 mb-10 max-w-6xl">
+          <div className="md:w-1/2">
+            <p className="text-base leading-relaxed mb-4">
+              The moment I finished asking the question, time seemed to freeze.
+              Doris's eyes filled with tears—the good kind that sparkle like
+              diamonds in the fading sunlight. For what felt like an eternity,
+              she just stared at me, and I could see her processing the
+              magnitude of what I had just asked.
+            </p>
+            <p className="text-base leading-relaxed">
+              Then, without saying a word, she threw her arms around me with
+              such force that we nearly tumbled over together. Her embrace was
+              everything—relief, joy, love, and promise all wrapped into one
+              perfect moment. I could feel her heart racing against mine, and I
+              knew that whatever her answer would be, this hug said everything.
+            </p>
           </div>
-
+          <div className="md:w-1/2 ">
+            <p className="text-base leading-relaxed mb-4 ">
+              We stayed like that for what felt like hours but was probably only
+              minutes, holding each other as the reality of the moment washed
+              over us. She was laughing and crying at the same time, and
+              honestly, so was I. It was messy and beautiful and absolutely
+              perfect—just like our love story.
+            </p>
+            <p className="text-base leading-relaxed">
+              When she finally pulled back to look at me, her face was glowing
+              with pure happiness. Her smile was brighter than any sunset, more
+              beautiful than any ring I could have chosen. In that embrace, I
+              felt our future beginning—two hearts deciding to beat as one for
+              the rest of our lives.
+            </p>
+          </div>
+        </div>
 
         {/* Fullwidth Image */}
         <div
@@ -177,12 +189,12 @@ const Story = () => {
         {/* "And Said Yes!" */}
         <div className="container mx-auto text-center mt-24">
           <h2 className="text-3xl md:text-4xl font-bold">
-            AND SAID <span className="text-[#f0394d]">"YES!"</span>
+            AND SAID <span className="text-red-500">"YES!"</span>
           </h2>
         </div>
       </section>
 
-      <Footer image="url('assets/images/both2.jpg')" position="center 30%" />
+      <Footer image="url('assets/images/hero2.jpg')" position="center 30%" />
     </div>
   );
 }
