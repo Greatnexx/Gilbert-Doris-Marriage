@@ -31,10 +31,16 @@ const Location = () => {
         <LocationCard
           image="assets/images/location-1.jpg"
           title="CEREMONY LOCATION"
+          subtitle="St. Sylvester’s parish, Olachagbaha Otukpa Benue state"
+          description="St. Sylvester’s parish is a beautiful venue for the wedding ceremony.
+          It features stunning architecture and a serene atmosphere, perfect for exchanging vows."
         />
         <LocationCard
           image="assets/images/location-1.jpg"
           title="RECEPTION LOCATION"
+          subtitle="Lucky child international Nursery and Primary School"
+          description="A fantastic venue for the wedding reception.
+          It offers ample space and a vibrant atmosphere, ensuring a memorable celebration."
         />
       </div>
 

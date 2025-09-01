@@ -1,5 +1,5 @@
 
-export default function LocationCard({image,title}) {
+export default function LocationCard({image,title, subtitle, description}) {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 max-w-xl mx-auto text-left">
       {/* Title */}
@@ -8,14 +8,12 @@ export default function LocationCard({image,title}) {
       </h2>
 
       {/* Subtitle */}
-      <p className="text-gray-700 mb-4">Foxegan Hotel, 2nd Floor, Room 8</p>
+      <p className="text-gray-700 mb-4">{subtitle}</p>
 
       {/* Description */}
       <p className="text-gray-600 leading-relaxed mb-6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-        ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel
-        turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut
-        ultrices nibh.
+      {description}
+
       </p>
 
       {/* Image */}

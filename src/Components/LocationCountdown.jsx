@@ -47,7 +47,9 @@ export default function LocationCountdown() {
         <div className="uppercase tracking-[3px] font-medium text-lg md:text-xl mb-6 animate-fadeInUp">
           <div className="w-[60%] mb-1 h-px bg-white animate-expand-width delay-1200 m-auto"></div>
           <div className="w-[60%] mb-4 h-px bg-white animate-expand-width delay-1200 m-auto"></div>
-          <h4>*** AT FOXEGAN HOTEL & RESTAURANT, LOS ANGELES ***</h4>
+          <h4 className="uppercase">
+            *** St. Sylvester’s parish, Olachagbaha Otukpa Benue state ***
+          </h4>
           <div className="w-[60%] mb-1 h-px bg-white animate-expand-width delay-1200 m-auto mt-3"></div>
           <div className="w-[60%] mb-10 h-px bg-white animate-expand-width delay-1200 m-auto"></div>
         </div>

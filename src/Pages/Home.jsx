@@ -8,7 +8,7 @@ import Footer from '../Components/Footer';
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
-  const [loadedImages, setLoadedImages] = useState(new Set());
+  const [, setLoadedImages] = useState(new Set());
   
   const heroSlides = [
     {
@@ -174,12 +174,12 @@ const Home = () => {
                   SAVE THE DATE
                 </div>
                 <div className="text-xs sm:text-sm font-bold text-white">DECEMBER</div>
-                <div className="text-lg sm:text-xl font-extrabold text-red-200">25</div>
+                <div className="text-lg sm:text-xl font-extrabold text-red-200">30th</div>
                 <div className="text-[9px] sm:text-[10px] font-medium text-red-400">2025</div>
                 <div className="mt-1 pt-1 border-t border-white/10">
-                  <div className="text-[8px] sm:text-[9px] text-white font-light">
+                  {/* <div className="text-[8px] sm:text-[9px] text-white font-light">
                     BENUE, NIGERIA
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

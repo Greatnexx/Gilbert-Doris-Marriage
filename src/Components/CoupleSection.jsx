@@ -1,6 +1,7 @@
 import { Heart } from "lucide-react";
 import him from '/assets/images/myGUY.jpg'; // replace with your actual image path
 import her from '/assets/images/doris.jpg'; // replace with your actual image path
+import { Link } from "react-router-dom";
 
 export default function CoupleSection() {
   return (
@@ -60,9 +61,9 @@ export default function CoupleSection() {
 
                 {/* Link */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-150 duration-500">
-                  <button className="border-2 border-white text-white py-3 px-8 hover:bg-red-500  hover:text-white transition-all duration-300 uppercase tracking-wider font-semibold">
+                  <Link to='/about-him`' className="border-2 border-white text-white py-3 px-8 hover:bg-red-500  hover:text-white transition-all duration-300 uppercase tracking-wider font-semibold">
                     ABOUT HIM
-                  </button>
+                  </Link>
                 </div>
               </div>
 
@@ -107,9 +108,9 @@ export default function CoupleSection() {
 
                 {/* Link */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity delay-150 duration-500">
-                  <button className="border-2 border-white text-white py-3 px-8 hover:bg-red-500 hover:text-white  transition-all duration-300 uppercase tracking-wider font-semibold">
+                  <Link to='/about-her' className="border-2 border-white text-white py-3 px-8 hover:bg-red-500 hover:text-white  transition-all duration-300 uppercase tracking-wider font-semibold">
                     ABOUT HER
-                  </button>
+                  </Link>
                 </div>
               </div>
 

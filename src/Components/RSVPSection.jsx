@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export default function RSVPSection() {
   return (
@@ -23,13 +24,15 @@ export default function RSVPSection() {
             miss out on this special day!
           </p>
 
-          {/* RSVP Button */}
-          <a
-            href="/rsvp"
-            className="inline-block mt-6 px-8 py-3 bg-red-500 text-white text-lg font-medium uppercase tracking-wide rounded hover:bg-pink-600 transition duration-300"
-          >
-            RSVP
-          </a>
+          {/* view location */}
+          <div className="text-center mt-8">
+            <Link
+              to="/location"
+              className="inline-block px-6 py-3 bg-red-500 text-white text-lg font-medium uppercase tracking-wide rounded hover:bg-pink-600 transition duration-300"
+            >
+              View Location
+            </Link>
+          </div>
         </div>
       </div>
     </section>

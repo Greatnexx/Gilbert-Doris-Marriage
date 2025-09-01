@@ -50,7 +50,7 @@ const Gallery = () => {
       </section>
 
       <Footer
-        image="url('assets/images/footer4.jpg')"
+        image="url('assets/images/footer4.jpg')" 
         backgroundPosition="center 40%"
       />
     </>
