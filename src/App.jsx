@@ -7,7 +7,6 @@ import Gallery from "./Pages/Gallery";
 import Location from "./Pages/Location";
 import BrideGroom from "./Pages/BrideGroom";
 import Story from "./Pages/Story";
-import RSVPSection from "./Pages/RSVPSection";
 import QrCodePage from "./Pages/QrCodePage";
 import Gift from "./Pages/Gift";
 import Bridesmaid from "./Pages/BridesMaid";
@@ -25,7 +24,6 @@ const App = () => {
         <Route path="/groom" element={<BrideGroom/>} />
         <Route path="/bridesmaid" element={<Bridesmaid/>} />
         <Route path="/story" element={<Story/>} />
-        <Route path="/rsvp" element={<RSVPSection/>} />
         <Route path="/qr-code" element={<QrCodePage />} />
         <Route path="/gift" element={<Gift />} />
 
