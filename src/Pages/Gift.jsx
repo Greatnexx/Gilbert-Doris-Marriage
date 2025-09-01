@@ -1,7 +1,5 @@
 import {
   Heart,
-  Plane,
-  Home,
   CreditCard,
   Copy,
   Eye,

@@ -8,7 +8,7 @@ const Home = () => {
  const [currentSlide, setCurrentSlide] = useState(0);
   
     
-    useEffect(() => {
+    useEffect(() => { 
    const timer = setInterval(() => {
      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
    }, 5000);
@@ -49,38 +49,6 @@ const Home = () => {
 
   return (
     <>
-      <style>
-        {`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
-        @keyframes expandWidth {
-          from {
-            width: 0;
-          }
-          to {
-            width: 6rem;
-          }
-        }
-        
-        @keyframes pulseScale {
-          0%, 500% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.05);
-          }
-        }`}
-      </style>
-
       <div className="min-h-screen bg-white">
         {/* Navigation */}
 
@@ -102,7 +70,7 @@ const Home = () => {
               >
                 <div className="absolute inset-0 bg-black/30"></div>
                 {/* Content */}
-                <div className="relative z-10 h-full  flex items-center justify-center text-center text-white">
+                <div className="relative top-24 z-10 h-full  flex items-center justify-center text-center text-white">
                   <div className="max-w-4xl mx-auto px-4">
                     <h1 className="text-6xl md:text-8xl font-[Pacifico] font-light mb-4 tracking-wider animate-fade-in-up delay-500">
                       {slide.title}
@@ -111,9 +79,16 @@ const Home = () => {
                       {slide.subtitle}
                     </div>
 
+                    {/* animation */}
+                    <div className="absolute top-1/6 left-1/6 w-2 h-2 bg-red-500 rounded-full animate-float-slow opacity-60"></div>
+                    <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-red-500 rounded-full animate-float-medium opacity-20"></div>
+                    <div className="absolute bottom-1/5 left-1/8 w-1 h-1 bg-red-500 rounded-full animate-float-fast opacity-70"></div>
+                    <div className="absolute top-1/3 right-1/6 w-1 h-1 bg-red-500 rounded-full animate-float-slow opacity-60"></div>
+                    <div className="absolute bottom-1/6 right-1/5 w-2 h-2 bg-red-500 rounded-full animate-float-medium opacity-50"></div>
+
                     {/* Decorative line with hearts */}
                     <div className="flex items-center justify-center space-x-4 mb-8 animate-fade-in-up delay-1000">
-                      <div className="w-24 h-px bg-white animate-expand-width delay-1200"></div>
+                      <div className="w-24 h-px bg-red-500 animate-expand-width delay-1200"></div>
                       <Heart
                         className={`w-6 h-6 text-red-500   fill-current animate-pulse-scale delay-1300`}
                       />
@@ -141,7 +116,7 @@ const Home = () => {
             }}
           >
             <div className="text-center space-y-30">
-              <div className="text-[9px] font-semibold tracking-widest text-red-500">
+              <div className="text-[9px] font-semibold tracking-widest text-red-500 ">
                 SAVE THE DATE
               </div>
               <div className="text-sm font-bold text-white">DECEMBER</div>
@@ -197,6 +172,7 @@ const Home = () => {
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
             {heroSlides.map((_, index) => (
               <button
+                key={index}
                 onClick={() => setCurrentSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentSlide

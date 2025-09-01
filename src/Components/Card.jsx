@@ -1,4 +1,4 @@
-import him from '/assets/images/him2.jpg'; // replace with your actual image path
+import him from '/assets/images/him2.jpg'; 
 const Card = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">

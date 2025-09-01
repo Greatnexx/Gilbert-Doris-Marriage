@@ -36,58 +36,51 @@ const Story = () => {
             <span className="w-16 h-[2px] bg-white" />
           </div>
 
-          {/* Paragraph */}
-          {/* <p className="text-sm md:text-base text-gray-100 leading-relaxed">
-            Integer ultrices malesuada ante quis pharetra. Nullam non bibendum
-            dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt
-            metus. Etiam ut ultrices nibh. Etiam aliquam mauris non hendrerit
-            faucibus. Proin pulvinar congue ex vitae commodo. Phasellus
-            condimentum, mi ut sodales.
-          </p> */}
+       
         </div>
       </section>
 
       <section className="bg-white text-white p-16">
         {/* SECTION TITLE */}
-        <div class="flex flex-col md:flex-row justify-center gap-8 text-gray-700 max-w-6xl mx-auto">
-          <div class="flex flex-col md:flex-row text-left w-full gap-8">
-            <div class="md:w-1/2">
-              <p class="mb-4 text-base leading-relaxed">
+        <div className="flex flex-col md:flex-row justify-center gap-8 text-gray-700 max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row text-left w-full gap-8">
+            <div className="md:w-1/2">
+              <p className="mb-4 text-base leading-relaxed">
                 I had been planning this moment for months, but nothing could
                 have prepared me for the butterflies in my stomach that evening.
                 I knew Doris was the one I wanted to spend forever with, but
                 finding the perfect moment felt like the most important mission
                 of my life.
               </p>
-              <p class="mb-4 text-base leading-relaxed">
+              <p className="mb-4 text-base leading-relaxed">
                 We were at our favorite spot—the little garden where we had our
                 first real conversation about our dreams and fears. As the sun
                 began to set, painting the sky in shades of pink and gold, I
                 realized there would never be a more perfect moment than this
                 one, with the woman who had become my whole world.
               </p>
-              <p class="text-base leading-relaxed">
+              <p className="text-base leading-relaxed">
                 My hands were shaking as I got down on one knee, but the moment
                 I saw her face—the surprise, the tears of joy, the radiant
                 smile—I knew everything was exactly as it should be. This was
                 our moment, the beginning of our forever.
               </p>
             </div>
-            <div class="md:w-1/2">
-              <p class="mb-4 text-base leading-relaxed">
+            <div className="md:w-1/2">
+              <p className="mb-4 text-base leading-relaxed">
                 When I finally found the courage to speak, the words came
                 straight from my heart: "Doris, you've made me believe in magic
                 again. You've shown me what it means to love and be loved
                 unconditionally. I can't imagine a single day without your
                 laughter, your wisdom, and your beautiful soul by my side."
               </p>
-              <p class="mb-4 text-base leading-relaxed">
+              <p className="mb-4 text-base leading-relaxed">
                 "You've turned my dreams into plans, my hopes into certainty,
                 and my life into the most beautiful adventure I could have ever
                 imagined. I want to wake up next to you every morning, face
                 every challenge together, and celebrate every victory as one."
               </p>
-              <p class="text-base leading-relaxed">
+              <p className="text-base leading-relaxed">
                 "Will you marry me, Doris? Will you be my wife, my partner, and
                 my best friend for all the days of our lives?" The rest, as they
                 say, is history—and the beginning of our greatest chapter yet.
@@ -120,7 +113,7 @@ const Story = () => {
               </div>
               <span className="w-16 h-[1px] bg-white"></span>
             </div>
-            <p class="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed">
               In that perfect moment, surrounded by the golden hour light and
               the scent of blooming flowers, time stood still. Her tears of joy,
               her whispered "yes," and the way she threw her arms around me— it
@@ -149,20 +142,20 @@ const Story = () => {
         </div>
 
         {/* Paragraphs */}
-          <div class="container mx-auto flex flex-col md:flex-row gap-10 md:gap-20 mb-10 max-w-6xl">
-            <div class="md:w-1/2">
-                <p class="text-base leading-relaxed mb-4">
+          <div className="container mx-auto flex flex-col md:flex-row gap-10 md:gap-20 mb-10 max-w-6xl">
+            <div className="md:w-1/2">
+                <p className="text-base leading-relaxed mb-4">
                     The moment I finished asking the question, time seemed to freeze. Doris's eyes filled with tears—the good kind that sparkle like diamonds in the fading sunlight. For what felt like an eternity, she just stared at me, and I could see her processing the magnitude of what I had just asked.
                 </p>
-                <p class="text-base leading-relaxed">
+                <p className="text-base leading-relaxed">
                     Then, without saying a word, she threw her arms around me with such force that we nearly tumbled over together. Her embrace was everything—relief, joy, love, and promise all wrapped into one perfect moment. I could feel her heart racing against mine, and I knew that whatever her answer would be, this hug said everything.
                 </p>
             </div>
-            <div class="md:w-1/2">
-                <p class="text-base leading-relaxed mb-4">
+            <div className="md:w-1/2">
+                <p className="text-base leading-relaxed mb-4">
                     We stayed like that for what felt like hours but was probably only minutes, holding each other as the reality of the moment washed over us. She was laughing and crying at the same time, and honestly, so was I. It was messy and beautiful and absolutely perfect—just like our love story.
                 </p>
-                <p class="text-base leading-relaxed">
+                <p className="text-base leading-relaxed">
                     When she finally pulled back to look at me, her face was glowing with pure happiness. Her smile was brighter than any sunset, more beautiful than any ring I could have chosen. In that embrace, I felt our future beginning—two hearts deciding to beat as one for the rest of our lives.
                 </p>
             </div>
