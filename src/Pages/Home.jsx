@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Heart } from 'lucide-react'
 import CoupleSection from '../Components/CoupleSection';
 import LocationCountdown from '../Components/LocationCountdown';
-import RSVPSection from '../Components/RsvpSection';
+import RSVPSection from '../Components/RSVPSection';
 import Footer from '../Components/Footer';
 const Home = () => {
  const [currentSlide, setCurrentSlide] = useState(0);
