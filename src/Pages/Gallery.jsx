@@ -4,19 +4,26 @@ import Footer from "../Components/Footer";
 
 const Gallery = () => {
   const galleryItems = [
-    { image: "assets/images/gallery1.jpg", title: "Engagement" },
-    { image: "assets/images/gallery2.jpg", title: "The Couple" },
-    { image: "assets/images/gallery3.jpg", title: "Reception" },
-    { image: "assets/images/gallery9.jpg", title: "Family & Friends" },
-    { image: "assets/images/gallery5.jpg", title: "Family & Friends" },
-    { image: "assets/images/gallery6.jpg", title: "Family & Friends" },
-    { image: "assets/images/gallery7.jpg", title: "Family & Friends" },
-    { image: "assets/images/gallery8.jpg", title: "Family & Friends" },
-    { image: "assets/images/gallery17.jpg", title: "Family & Friends" },
-    { image: "assets/images/gallery18.jpg", title: "Family & Friends" },
-    { image: "assets/images/gallery14.jpg", title: "Family & Friends" },
-    { image: "assets/images/gallery15.jpg", title: "Family & Friends" },
-
+    { image: "assets/images/gallery1.jpg" },
+    { image: "assets/images/gallery2.jpg" },
+    { image: "assets/images/gallery3.jpg" },
+    { image: "assets/images/gallery9.jpg" },
+    { image: "assets/images/gallery5.jpg" },
+    { image: "assets/images/gallery6.jpg" },
+    { image: "assets/images/gallery7.jpg" },
+    { image: "assets/images/gallery8.jpg" },
+    { image: "assets/images/gallery17.jpg" },
+    { image: "assets/images/gallery18.jpg" },
+    { image: "assets/images/gallery14.jpg"},
+    { image: "assets/images/gallery15.jpg"},
+    { image: "assets/images/dorisblue.jpg"},
+    { image: "assets/images/both2.jpg"},
+    { image: "assets/images/owieblackNative.jpg"},
+    { image: "assets/images/doris8.jpg" },
+    { image: "assets/images/doris39.jpg" },
+    { image: "assets/images/owie.jpg" },
+    { image: "assets/images/doris5.jpg" },
+    { image: "assets/images/motor.jpg" }
   ];
 
   return (

@@ -182,7 +182,7 @@ const Story = () => {
         </div>
       </section>
 
-      <Footer image="url('assets/images/footer5.jpg')" position="center 30%" />
+      <Footer image="url('assets/images/both2.jpg')" position="center 30%" />
     </div>
   );
 }

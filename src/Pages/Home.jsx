@@ -80,15 +80,15 @@ const Home = () => {
                     </div>
 
                     {/* animation */}
-                    <div className="absolute top-1/6 left-1/6 w-2 h-2 bg-red-500 rounded-full animate-float-slow opacity-60"></div>
-                    <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-red-500 rounded-full animate-float-medium opacity-20"></div>
-                    <div className="absolute bottom-1/5 left-1/8 w-1 h-1 bg-red-500 rounded-full animate-float-fast opacity-70"></div>
-                    <div className="absolute top-1/3 right-1/6 w-1 h-1 bg-red-500 rounded-full animate-float-slow opacity-60"></div>
-                    <div className="absolute bottom-1/6 right-1/5 w-2 h-2 bg-red-500 rounded-full animate-float-medium opacity-50"></div>
+                    
+                    <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-red-500  rounded-full  animate-float-medium "></div>
+                    <div className="absolute bottom-1/5 left-1/8 w-1 h-1  rounded-full bg-red-500  animate-float-fast opacity-70"></div>
+                    <div className="absolute top-1/3 right-1/6 w-1 h-1 rounded-full bg-red-500 animate-float-slow opacity-60"></div>
+                    <div className="absolute bottom-1/6 right-1/5 w-1 h-1 bg-red-500  rounded-full animate-float-medium opacity-50"></div>
 
                     {/* Decorative line with hearts */}
-                    <div className="flex items-center justify-center space-x-4 mb-8 animate-fade-in-up delay-1000">
-                      <div className="w-24 h-px bg-red-500 animate-expand-width delay-1200"></div>
+                    <div className="flex items-center justify-center space-x-4  mb-8 animate-fade-in-up delay-1000">
+                      <div className="md:w-24 w-12 h-px bg-red-500 animate-expand-width delay-1200"></div>
                       <Heart
                         className={`w-6 h-6 text-red-500   fill-current animate-pulse-scale delay-1300`}
                       />
@@ -96,7 +96,7 @@ const Home = () => {
                       <Heart
                         className={`w-6 h-6 text-red  fill-current animate-pulse-scale delay-1500`}
                       />
-                      <div className="w-24 h-px bg-white animate-expand-width delay-1600"></div>
+                      <div className="md:w-24 w-12 h-px bg-white animate-expand-width delay-1600"></div>
                     </div>
 
                     <p className="text-xl md:text-2xl font-light tracking-widest animate-fade-in-up delay-1800">
@@ -109,13 +109,13 @@ const Home = () => {
           ))}
 
           <div
-            className="backdrop-blur-md rounded-lg px-3 py-2 text-white border border-white/20 opacity-90 absolute right-6 top-40 animate-fade-in-right z-10 shadow-lg w-40"
+            className="backdrop-blur-md rounded-lg px-3 py-2 text-white border border-white/20 opacity-90 absolute right-6 md:top-40 top-20 animate-fade-in-right z-10 shadow-lg w-40"
             style={{
               animationDelay: "2s",
               animationFillMode: "forwards",
             }}
           >
-            <div className="text-center space-y-30">
+            <div className="text-center md:space-y-30">
               <div className="text-[9px] font-semibold tracking-widest text-red-500 ">
                 SAVE THE DATE
               </div>
@@ -133,7 +133,7 @@ const Home = () => {
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-6 top-1/2 transform -translate-y-1/2 text-white/70 hover:text-white transition-colors z-20"
+            className=" hidden md:block absolute left-6 top-1/2 transform -translate-y-1/2 text-white/70 hover:text-white transition-colors z-20"
           >
             <svg
               className="w-12 h-12"
@@ -151,7 +151,7 @@ const Home = () => {
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-6 top-1/2 transform -translate-y-1/2 text-white/70 hover:text-white transition-colors z-20"
+            className=" hidden md:blockabsolute right-6 top-1/2 transform -translate-y-1/2 text-white/70 hover:text-white transition-colors z-20"
           >
             <svg
               className="w-12 h-12"

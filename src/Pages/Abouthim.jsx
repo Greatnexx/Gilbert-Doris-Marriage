@@ -107,7 +107,7 @@ const Abouthim = () => {
           </div>
         </div>
       </section>
-      <Footer image="url('assets/images/footer5.jpg')" position="center 30%" />
+      <Footer image="url('assets/images/owie.jpg')" position="center 30%" />
     </>
   );
 };

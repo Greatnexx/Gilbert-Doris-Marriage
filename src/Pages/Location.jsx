@@ -4,16 +4,24 @@ const Location = () => {
   return (
     <div>
       {/* HERO BANNER */}
-      <section
-        className="h-[60vh] bg-cover bg-gray-100 bg-center flex items-center justify-center relative"
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1400&q=80')`,
-        }}
-      >
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative text-white text-center px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">The Venue</h1>
-          <p className="text-lg md:text-xl">
+      <section className="h-[60vh] bg-slate-900 flex items-center justify-center relative overflow-hidden">
+        {/* Geometric background pattern */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-red-900/20 to-transparent"></div>
+          <div className="absolute bottom-0 right-0 w-2/3 h-2/3 bg-gradient-to-tl from-red-800/15 to-transparent"></div>
+        </div>
+
+        {/* Floating geometric shapes */}
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 border-2 border-red-500 rotate-45 transform"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-24 h-24 bg-red-500 rotate-12 transform"></div>
+        <div className="absolute top-1/2 right-1/3 w-16 h-16 border border-white/20 rounded-full"></div>
+
+        <div className="relative text-white text-center px-4 z-10">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extralight mb-6 tracking-widest">
+            The Venue
+          </h1>
+          <div className="w-24 h-px bg-red-500 mx-auto mb-6"></div>
+          <p className="text-base md:text-lg font-light tracking-wider opacity-90">
             Join us for the celebration of love!
           </p>
         </div>
@@ -45,6 +53,6 @@ const Location = () => {
       </section>
     </div>
   );
-}
+};
 
-export default Location
+export default Location;

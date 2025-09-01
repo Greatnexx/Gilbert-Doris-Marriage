@@ -13,14 +13,14 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
           <div className="flex items-center justify-between h-12 sm:h-14">
             {/* Mobile Menu Button */}
-            <div className="md:hidden">
+            <div className="md:hidden ">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 hover:bg-gray-800 rounded-md transition-colors"
+                className="p-2 hover:bg-gray-800 rounded-md transition-colors flex-2"
                 aria-label="Toggle mobile menu"
               >
                 {mobileMenuOpen ? (
-                  <X className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <X className="w-5 h-5 sm:w-6 sm:h-6 " />
                 ) : (
                   <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
                 )}
@@ -156,7 +156,6 @@ const Navbar = () => {
                         >
                           GROOMSMEN
                         </Link>
-                        
                       </div>
                     </div>
                   )}
@@ -171,14 +170,18 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
+        {/* Mobile Menu */}
         <div
           className={`md:hidden transition-all duration-300 ease-in-out ${
             mobileMenuOpen
               ? "max-h-screen opacity-100"
               : "max-h-0 opacity-0 overflow-hidden"
-          }`}
+          } z-50`}
         >
-          <div className="bg-black border-t border-gray-700">
+          <div
+            className="bg-black border-t border-gray-700 relative z-50"
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="flex flex-col items-center space-y-1 py-4 text-sm">
               <Link
                 to="/"
@@ -191,10 +194,7 @@ const Navbar = () => {
               {/* Mobile About Section */}
               <div className="w-full px-4">
                 <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setAboutDropdown(!aboutDropdown);
-                  }}
+                  onClick={() => setAboutDropdown(!aboutDropdown)}
                   className="flex items-center justify-between w-full py-3 px-6 hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-md"
                 >
                   <span>ABOUT</span>
@@ -227,7 +227,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-
+              {/* Mobile Gallery Link */}
               <Link
                 to="/gallery"
                 onClick={() => setMobileMenuOpen(false)}
@@ -235,42 +235,21 @@ const Navbar = () => {
               >
                 GALLERY
               </Link>
-
-              <Link
-                to="/story"
-                onClick={() => setMobileMenuOpen(false)}
-                className="py-3 px-6 w-full text-center hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-md mx-4"
-              >
-                THE STORY
-              </Link>
-
-              {/* Gift Us Mobile Link */}
-              <Link
-                to="/gift"
-                onClick={() => setMobileMenuOpen(false)}
-                className="py-3 px-6 w-full text-center hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-md mx-4"
-              >
-                GIFT US
-              </Link>
-
-              {/* Mobile Wedding Section */}
+              {/* Mobile Wedding section */}
               <div className="w-full px-4">
                 <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setWeddingDropdown(!weddingDropdown);
-                  }}
+                  onClick={() => setAboutDropdown(!aboutDropdown)}
                   className="flex items-center justify-between w-full py-3 px-6 hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-md"
                 >
-                  <span>THE WEDDING</span>
+                  <span>WEDDING</span>
                   <span className="text-rose-500 font-bold text-lg">
-                    {weddingDropdown ? "−" : "+"}
+                    {aboutDropdown ? "−" : "+"}
                   </span>
                 </button>
                 <div
                   className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                    weddingDropdown
-                      ? "max-h-48 opacity-100 mb-2"
+                    aboutDropdown
+                      ? "max-h-32 opacity-100 mb-2"
                       : "max-h-0 opacity-0"
                   }`}
                 >
@@ -294,14 +273,38 @@ const Navbar = () => {
                       onClick={() => setMobileMenuOpen(false)}
                       className="py-2 px-4 text-gray-300 hover:text-rose-500 hover:bg-gray-800 transition-colors duration-200 rounded-md text-left"
                     >
-                      GROOMSMEN
+                      BRIDEGROOM
                     </Link>
                   </div>
                 </div>
               </div>
+
+              <Link
+                to="/story"
+                onClick={() => setMobileMenuOpen(false)}
+                className="py-3 px-6 w-full text-center hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-md mx-4"
+              >
+                STORY
+              </Link>
+
+              <Link
+                to="/gift"
+                onClick={() => setMobileMenuOpen(false)}
+                className="py-3 px-6 w-full text-center hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-md mx-4"
+              >
+                GIFT US
+              </Link>
             </div>
           </div>
         </div>
+
+        {/* Overlay for mobile menu */}
+        {mobileMenuOpen && (
+          <div
+            className="md:hidden fixed inset-0 bg-black bg-opacity-50 z-40 mt-12 sm:mt-16"
+            onClick={() => setMobileMenuOpen(false)}
+          />
+        )}
 
         {/* Overlay for mobile menu */}
         {mobileMenuOpen && (

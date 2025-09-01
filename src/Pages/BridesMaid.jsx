@@ -18,20 +18,19 @@ const Bridesmaid = () => {
              <span className="w-16 h-[2px] bg-gray-300"></span>
            </div>
            <p className="max-w-2xl mx-auto text-gray-600">
-             
-             Take a look at our beautiful bridesmaids to spice up our celebration
+             Our beautiful bridesmaids are here to support us on our special day.
            </p>
          </div>
    
          <div className="container mx-auto px-4">
-           <div className="grid grid-cols-3 gap-2">
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
              {groomsmenData.map((man, index) => (
                <BrideandgroomCard key={index} {...man} />
              ))}
            </div>
          </div>
        </section>
-       <Footer image="url('assets/images/doris.jpg')"
+       <Footer image="url('assets/images/doris5.jpg')"
                position="center 30%"
              />
 

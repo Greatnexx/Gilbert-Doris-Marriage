@@ -10,7 +10,7 @@ export default function CoupleSection() {
           {/* Section Title */}
           <div className="w-full md:w-10/12 text-center mb-16">
             <div className="section-title">
-              <h1 className="text-4xl  md:text-5xl font-bold text-gray-800 mb-6">
+              <h1 className="text-4xl font-[pacifo]  md:text-5xl font-bold text-gray-800 mb-6 ">
                 THE HAPPY COUPLE
               </h1>
               <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed text-lg">
