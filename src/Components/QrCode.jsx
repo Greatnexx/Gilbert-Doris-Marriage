@@ -92,6 +92,7 @@ const QrCode= () => {
             >
               <img
                 src={qrImage}
+                loading="lazy"
                 alt="Generated QR Code"
                 className="w-64 h-64 object-contain"
               />

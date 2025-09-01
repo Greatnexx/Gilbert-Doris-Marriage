@@ -9,6 +9,7 @@ const BrideandgroomCard = ({image, role, name, description}) => {
           <img
             src={image}
             alt={name}
+            loading="lazy"
             className="rounded-full w-full h-full object-center"
           />
         </div>

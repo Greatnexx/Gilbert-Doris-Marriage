@@ -147,6 +147,7 @@ const Preloader = ({ onComplete, duration = 4000 }) => {
             <img
               src="/assets/images/gallery14.jpg"
               alt="D & G"
+              loading="lazy"
               className="w-full h-full object-cover animate-pulse"
               style={{ animationDuration: "2s" }}
               onError={(e) => {

@@ -11,6 +11,7 @@ const Abouthim = () => {
           backgroundImage: "url('/assets/images/pic.jpg')",
           backgroundPosition: "center 23%",
           transform: "translateZ(0)",
+          loading: "eager"
         }}
       >
         {/* Dark overlay */}

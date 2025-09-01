@@ -33,7 +33,7 @@ const Gallery = () => {
           <h2 className="text-3xl font-bold text-center mb-10">Gallery</h2>
           <div className="flex items-center justify-center mb-[20px] space-x-3  ">
             <span className="w-16 h-px bg-gray-400 "></span>
-            <Heart className="w-5 h-5 text-pink-500 fill-current" />
+            <Heart className="w-5 h-5 text-red-500 fill-current" />
             <Heart className="w-4 h-4 text-gray-400" />
             <span className="w-16 h-px bg-gray-400"></span>
           </div>

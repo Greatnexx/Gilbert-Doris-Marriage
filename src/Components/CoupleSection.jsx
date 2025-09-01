@@ -38,6 +38,7 @@ export default function CoupleSection() {
                 <div className="aspect-[5/5] bg-gradient-to-br from-gray-200 to-gray-300">
                   <img
                     src={him}
+                    loading="lazy"
                     alt="Groom - Gerrard Leandro"
                     className="w-full  object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
                   />

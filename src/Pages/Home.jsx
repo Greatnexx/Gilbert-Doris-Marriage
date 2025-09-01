@@ -116,7 +116,7 @@ const Home = () => {
                     src={slide.image}
                     alt={slide.title}
                     className="w-full h-full object-cover opacity-0"
-                    loading="eager"
+                    loading="lazy"
                     onLoad={(e) => {
                       e.target.style.opacity = '0'; // Keep hidden, just for preloading
                     }}

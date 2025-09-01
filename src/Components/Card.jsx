@@ -7,6 +7,7 @@ const Card = () => {
         <img
           src={him} // replace with your actual image path
           alt="The Groom"
+          loading="lazy"
           className="w-full object-cover"
         />
 

@@ -21,6 +21,7 @@ export default function LocationCard({image,title}) {
       {/* Image */}
       <img
         src={image}
+        loading="lazy"
         alt="Ceremony"
         className="w-full h-auto rounded-md"
       />

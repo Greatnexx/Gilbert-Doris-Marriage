@@ -50,21 +50,21 @@ const Abouther = () => {
         <div className="container mx-auto px-4 ">
           {/* SOCIAL NETWORK ICONS */}
           <div className="flex justify-center mb-12 space-x-4">
-            <a href="#">
+            <Link to="#">
               <div className="flex items-center justify-center w-12 h-12 border-2  border-gray-300 rounded-full text-gray-600 hover:text-blue-600 hover:border-blue-600 transition">
                 <FaFacebook />
               </div>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <div className="flex items-center justify-center w-12 h-12 border-2 border-gray-300 rounded-full text-gray-600 hover:text-pink-600 hover:border-pink-600 transition">
                 <FaInstagram />
               </div>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <div className="flex items-center justify-center w-12 h-12 border-2 border-gray-300 rounded-full text-gray-600 hover:text-blue-400 hover:border-blue-400 transition">
                 <FaTwitter />
               </div>
-            </a>
+            </Link>
           </div>
 
           {/* TEXT SECTION */}
@@ -103,7 +103,7 @@ const Abouther = () => {
               </div>
             </div>
           </div>
-        </div> 
+        </div>
       </section>
 
       <Footer image="url('assets/images/doris3.jpg')" position="center 30%" />
