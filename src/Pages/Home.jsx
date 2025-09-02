@@ -4,6 +4,7 @@ import CoupleSection from '../Components/CoupleSection';
 import LocationCountdown from '../Components/LocationCountdown';
 import RSVPSection from '../Components/RSVPSection';
 import Footer from '../Components/Footer';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -14,7 +15,7 @@ const Home = () => {
     {
       image: "/assets/images/gallery7.jpg",
       title: "Save The Date",
-      subtitle: "19.12.16",
+      subtitle: "30.12.25",
       description: "WE ARE GETTING MARRIED",
     },
     {
@@ -118,14 +119,14 @@ const Home = () => {
                     className="w-full h-full object-cover opacity-0"
                     loading="lazy"
                     onLoad={(e) => {
-                      e.target.style.opacity = '0'; // Keep hidden, just for preloading
+                      e.target.style.opacity = "0"; // Keep hidden, just for preloading
                     }}
                   />
                 </div>
-                
+
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/30"></div>
-                
+
                 {/* Content */}
                 <div className="relative top-16 sm:top-20 md:top-24 z-10 h-full flex items-center justify-center text-center text-white">
                   <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -163,19 +164,27 @@ const Home = () => {
           ))}
 
           {/* Save the Date Card - Mobile optimized */}
-          <div className="absolute right-3 sm:right-6 top-16 sm:top-20 md:top-40 z-20 animate-fade-in-right"
-               style={{
-                 animationDelay: "2s",
-                 animationFillMode: "forwards",
-               }}>
+          <div
+            className="absolute right-3 sm:right-6 top-16 sm:top-20 md:top-40 z-20 animate-fade-in-right"
+            style={{
+              animationDelay: "2s",
+              animationFillMode: "forwards",
+            }}
+          >
             <div className="backdrop-blur-md rounded-lg px-3 py-2 sm:px-4 sm:py-3 text-white border border-white/20 opacity-90 shadow-lg w-32 sm:w-40">
               <div className="text-center">
                 <div className="text-[8px] sm:text-[9px] font-semibold tracking-widest text-red-500">
                   SAVE THE DATE
                 </div>
-                <div className="text-xs sm:text-sm font-bold text-white">DECEMBER</div>
-                <div className="text-lg sm:text-xl font-extrabold text-red-200">30th</div>
-                <div className="text-[9px] sm:text-[10px] font-medium text-red-400">2025</div>
+                <div className="text-xs sm:text-sm font-bold text-white">
+                  DECEMBER
+                </div>
+                <div className="text-lg sm:text-xl font-extrabold text-red-200">
+                  30th
+                </div>
+                <div className="text-[9px] sm:text-[10px] font-medium text-red-400">
+                  2025
+                </div>
                 <div className="mt-1 pt-1 border-t border-white/10">
                   {/* <div className="text-[8px] sm:text-[9px] text-white font-light">
                     BENUE, NIGERIA
@@ -190,17 +199,37 @@ const Home = () => {
             onClick={prevSlide}
             className="hidden lg:block absolute left-6 top-1/2 transform -translate-y-1/2 text-white/70 hover:text-white transition-colors z-20 bg-black/20 rounded-full p-2 backdrop-blur-sm"
           >
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M15 19l-7-7 7-7" />
+            <svg
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1}
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
           </button>
-          
+
           <button
             onClick={nextSlide}
             className="hidden lg:block absolute right-6 top-1/2 transform -translate-y-1/2 text-white/70 hover:text-white transition-colors z-20 bg-black/20 rounded-full p-2 backdrop-blur-sm"
           >
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 5l7 7-7 7" />
+            <svg
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1}
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </button>
 
@@ -223,13 +252,53 @@ const Home = () => {
 
       <CoupleSection />
       <LocationCountdown />
+      {/* gift */}
+      <section className="py-16 px-6 bg-gradient-to-br from-black to-gray-800">
+        <div className="max-w-lg mx-auto">
+          <div className="bg-white rounded-2xl shadow-xl p-3 border border-slate-100">
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-6 bg-red-500 rounded-2xl flex items-center justify-center">
+                <span className="text-2xl">💝</span>
+              </div>
+
+              <h2 className="text-3xl font-bold text-slate-800 mb-4 font-[pacifo]">
+                Show Your Love
+              </h2>
+
+              <p className="text-slate-600 text-lg leading-relaxed mb-8 ">
+                Your love and support mean everything to us. If you'd like to
+                contribute to our special day, we'd be deeply grateful.
+              </p>
+
+              <Link
+                to="/gift"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-red-500 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl hover:from-red-600 hover:to-red-700 transform hover:-translate-y-0.5 transition-all duration-200"
+              >
+                <span>Give a Gift</span>
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <RSVPSection />
       <Footer
         image="url('assets/images/footerimg.jpg')"
         position="center 30%"
       />
-
-  
     </>
   );
 }
