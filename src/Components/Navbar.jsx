@@ -12,25 +12,23 @@ const Navbar = () => {
       <nav className="text-[13px] fixed top-0 w-full backdrop-blur-md bg-black py-2 sm:py-4 text-[#fff] z-50 border-b border-b-white shadow-md">
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
           <div className="flex items-center justify-between h-12 sm:h-14">
-            {/* Mobile Menu Button */}
-            <div className="md:hidden ">
+            {/* Mobile Layout - Everything Left Aligned */}
+            <div className="md:hidden flex items-center space-x-[120px]">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 hover:bg-gray-800 rounded-md transition-colors flex-2"
+                className="p-2 hover:bg-gray-800 rounded-md transition-colors"
                 aria-label="Toggle mobile menu"
               >
                 {mobileMenuOpen ? (
-                  <X className="w-5 h-5 sm:w-6 sm:h-6 " />
+                  <X className="w-5 h-5 sm:w-6 sm:h-6" />
                 ) : (
                   <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
                 )}
               </button>
-            </div>
-
-            {/* Centered Logo for Mobile */}
-            <div className="md:hidden absolute left-1/2 transform -translate-x-1/2">
-              <div className="bg-rose-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full font-bold text-sm">
-                G ♥ D
+              <div className="bg-rose-500 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full font-bold text-sm flex items-center">
+                <span>G</span>
+                <Heart className="w-3 h-3 mx-1" />
+                <span>D</span>
               </div>
             </div>
 
@@ -58,7 +56,7 @@ const Navbar = () => {
                     ABOUT
                   </button>
                   {aboutDropdown && (
-                    <div className="absolute top-full left-0  mt-1 w-48 lg:w-30 bg-white shadow-lg rounded-b-md overflow-hidden">
+                    <div className="absolute top-full left-0 mt-1 w-48 lg:w-30 bg-white shadow-lg rounded-b-md overflow-hidden">
                       <div className="bg-rose-500 text-white px-4 lg:px-6 py-2 lg:py-3 text-xs lg:text-sm font-medium flex items-center">
                         ABOUT
                         <Heart className="w-3 h-3 lg:w-4 lg:h-4 ml-2" />
@@ -132,7 +130,7 @@ const Navbar = () => {
                     THE WEDDING
                   </button>
                   {weddingDropdown && (
-                    <div className="absolute top-full right-0 left-0 mt-1  w-48 lg:w-30 bg-white shadow-lg rounded-b-md overflow-hidden">
+                    <div className="absolute top-full right-0 left-0 mt-1 w-48 lg:w-30 bg-white shadow-lg rounded-b-md overflow-hidden">
                       <div className="bg-rose-500 text-white px-4 lg:px-6 py-2 lg:py-3 text-xs lg:text-sm font-medium flex items-center">
                         THE WEDDING
                         <Heart className="w-3 h-3 lg:w-4 lg:h-4 ml-2" />
@@ -164,12 +162,11 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Empty space for mobile layout balance */}
-            <div className="md:hidden w-10"></div>
+            {/* Desktop Right Side - Empty for balance */}
+            <div className="hidden md:block"></div>
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {/* Mobile Menu */}
         <div
           className={`md:hidden transition-all duration-300 ease-in-out ${
@@ -182,98 +179,105 @@ const Navbar = () => {
             className="bg-black border-t border-gray-700 relative z-50"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex flex-col items-center space-y-1 py-4 text-sm">
+            <div className="flex flex-col space-y-2 py-4 px-4">
               <Link
                 to="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className="py-3 px-6 w-full text-center hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-md mx-4"
+                className="flex items-center space-x-2 py-3 px-4 hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-lg text-left group"
               >
-                HOME
+                <Heart className="w-4 h-4 text-rose-500 group-hover:scale-110 transition-transform" />
+                <span className="font-medium">HOME</span>
               </Link>
 
               {/* Mobile About Section */}
-              <div className="w-full px-4">
+              <div className="space-y-1">
                 <button
                   onClick={() => setAboutDropdown(!aboutDropdown)}
-                  className="flex items-center justify-between w-full py-3 px-6 hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-md"
+                  className="flex items-center justify-between w-full py-3 px-4 hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-lg group"
                 >
-                  <span>ABOUT</span>
-                  <span className="text-rose-500 font-bold text-lg">
+                  <div className="flex items-center space-x-2">
+                    <Heart className="w-4 h-4 text-rose-500 group-hover:scale-110 transition-transform" />
+                    <span className="font-medium">ABOUT</span>
+                  </div>
+                  <span className="text-rose-500 font-bold text-lg transition-transform duration-200">
                     {aboutDropdown ? "−" : "+"}
                   </span>
                 </button>
                 <div
                   className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                    aboutDropdown
-                      ? "max-h-32 opacity-100 mb-2"
-                      : "max-h-0 opacity-0"
+                    aboutDropdown ? "max-h-32 opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >
-                  <div className="flex flex-col space-y-1 pl-4 mt-2">
+                  <div className="flex flex-col space-y-1 pl-6 mt-1">
                     <Link
                       to="/about-him"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="py-2 px-4 text-gray-300 hover:text-rose-500 hover:bg-gray-800 transition-colors duration-200 rounded-md text-left"
+                      className="py-2 px-4 text-gray-300 hover:text-rose-500 hover:bg-gray-800 transition-colors duration-200 rounded-md text-left text-sm"
                     >
                       ABOUT HIM
                     </Link>
                     <Link
                       to="/about-her"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="py-2 px-4 text-gray-300 hover:text-rose-500 hover:bg-gray-800 transition-colors duration-200 rounded-md text-left"
+                      className="py-2 px-4 text-gray-300 hover:text-rose-500 hover:bg-gray-800 transition-colors duration-200 rounded-md text-left text-sm"
                     >
                       ABOUT HER
                     </Link>
                   </div>
                 </div>
               </div>
-              {/* Mobile Gallery Link */}
+
               <Link
                 to="/gallery"
                 onClick={() => setMobileMenuOpen(false)}
-                className="py-3 px-6 w-full text-center hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-md mx-4"
+                className="flex items-center space-x-2 py-3 px-4 hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-lg text-left group"
               >
-                GALLERY
+                <Heart className="w-4 h-4 text-rose-500 group-hover:scale-110 transition-transform" />
+                <span className="font-medium">GALLERY</span>
               </Link>
+
               {/* Mobile Wedding section */}
-              <div className="w-full px-4">
+              <div className="space-y-1">
                 <button
-                  onClick={() => setAboutDropdown(!aboutDropdown)}
-                  className="flex items-center justify-between w-full py-3 px-6 hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-md"
+                  onClick={() => setWeddingDropdown(!weddingDropdown)}
+                  className="flex items-center justify-between w-full py-3 px-4 hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-lg group"
                 >
-                  <span>WEDDING</span>
-                  <span className="text-rose-500 font-bold text-lg">
-                    {aboutDropdown ? "−" : "+"}
+                  <div className="flex items-center space-x-2">
+                    <Heart className="w-4 h-4 text-rose-500 group-hover:scale-110 transition-transform" />
+                    <span className="font-medium">THE WEDDING</span>
+                  </div>
+                  <span className="text-rose-500 font-bold text-lg transition-transform duration-200">
+                    {weddingDropdown ? "−" : "+"}
                   </span>
                 </button>
                 <div
                   className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                    aboutDropdown
-                      ? "max-h-32 opacity-100 mb-2"
+                    weddingDropdown
+                      ? "max-h-40 opacity-100"
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  <div className="flex flex-col space-y-1 pl-4 mt-2">
+                  <div className="flex flex-col space-y-1 pl-6 mt-1">
                     <Link
                       to="/location"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="py-2 px-4 text-gray-300 hover:text-rose-500 hover:bg-gray-800 transition-colors duration-200 rounded-md text-left"
+                      className="py-2 px-4 text-gray-300 hover:text-rose-500 hover:bg-gray-800 transition-colors duration-200 rounded-md text-left text-sm"
                     >
                       LOCATION
                     </Link>
                     <Link
                       to="/bridesmaid"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="py-2 px-4 text-gray-300 hover:text-rose-500 hover:bg-gray-800 transition-colors duration-200 rounded-md text-left"
+                      className="py-2 px-4 text-gray-300 hover:text-rose-500 hover:bg-gray-800 transition-colors duration-200 rounded-md text-left text-sm"
                     >
                       BRIDESMAID
                     </Link>
                     <Link
                       to="/groom"
                       onClick={() => setMobileMenuOpen(false)}
-                      className="py-2 px-4 text-gray-300 hover:text-rose-500 hover:bg-gray-800 transition-colors duration-200 rounded-md text-left"
+                      className="py-2 px-4 text-gray-300 hover:text-rose-500 hover:bg-gray-800 transition-colors duration-200 rounded-md text-left text-sm"
                     >
-                      BRIDEGROOM
+                      GROOMSMEN
                     </Link>
                   </div>
                 </div>
@@ -282,29 +286,23 @@ const Navbar = () => {
               <Link
                 to="/story"
                 onClick={() => setMobileMenuOpen(false)}
-                className="py-3 px-6 w-full text-center hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-md mx-4"
+                className="flex items-center space-x-2 py-3 px-4 hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-lg text-left group"
               >
-                STORY
+                <Heart className="w-4 h-4 text-rose-500 group-hover:scale-110 transition-transform" />
+                <span className="font-medium">THE STORY</span>
               </Link>
 
               <Link
                 to="/gift"
                 onClick={() => setMobileMenuOpen(false)}
-                className="py-3 px-6 w-full text-center hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-md mx-4"
+                className="flex items-center space-x-2 py-3 px-4 hover:bg-gray-800 hover:text-rose-500 transition-colors duration-200 rounded-lg text-left group"
               >
-                GIFT US
+                <Heart className="w-4 h-4 text-rose-500 group-hover:scale-110 transition-transform" />
+                <span className="font-medium">GIFT US</span>
               </Link>
             </div>
           </div>
         </div>
-
-        {/* Overlay for mobile menu */}
-        {mobileMenuOpen && (
-          <div
-            className="md:hidden fixed inset-0 bg-black bg-opacity-50 z-40 mt-12 sm:mt-16"
-            onClick={() => setMobileMenuOpen(false)}
-          />
-        )}
 
         {/* Overlay for mobile menu */}
         {mobileMenuOpen && (
