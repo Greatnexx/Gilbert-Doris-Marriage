@@ -1,6 +1,6 @@
 import BrideandgroomCard from "../Components/BrideandgroomCard"
 import Footer from "../Components/Footer"
-import { groomsmenData } from "../utils/GroomMen"
+import { Brides } from "../utils/Brides"
 
 const Bridesmaid = () => {
   return (
@@ -24,8 +24,8 @@ const Bridesmaid = () => {
    
          <div className="container mx-auto px-4">
            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-             {groomsmenData.map((man, index) => (
-               <BrideandgroomCard key={index} {...man} />
+             {Brides.map((bridesmaid, index) => (
+               <BrideandgroomCard key={index} {...bridesmaid} />
              ))}
            </div>
          </div>

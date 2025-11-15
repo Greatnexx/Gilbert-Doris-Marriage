@@ -50,7 +50,7 @@ const Story = () => {
                 of my life.
               </p>
               <p className="mb-4 text-base leading-relaxed">
-                We were at our favorite spot—the little garden where we had our
+                We were at our favorite spot the little garden where we had our
                 first real conversation about our dreams and fears. As the sun
                 began to set, painting the sky in shades of pink and gold, I
                 realized there would never be a more perfect moment than this
@@ -58,8 +58,8 @@ const Story = () => {
               </p>
               <p className="text-base leading-relaxed">
                 My hands were shaking as I got down on one knee, but the moment
-                I saw her face—the surprise, the tears of joy, the radiant
-                smile—I knew everything was exactly as it should be. This was
+                I saw her face the surprise, the tears of joy, the radiant
+                smile. I knew everything was exactly as it should be. This was
                 our moment, the beginning of our forever.
               </p>
             </div>
@@ -80,7 +80,7 @@ const Story = () => {
               <p className="text-base leading-relaxed">
                 "Will you marry me, Doris? Will you be my wife, my partner, and
                 my best friend for all the days of our lives?" The rest, as they
-                say, is history—and the beginning of our greatest chapter yet.
+                say, is history and the beginning of our greatest chapter yet.
               </p>
             </div>
           </div>
@@ -113,7 +113,7 @@ const Story = () => {
             <p className="md:text-lg leading-relaxed">
               In that perfect moment, surrounded by the golden hour light and
               the scent of blooming flowers, time stood still. Her tears of joy,
-              her whispered "yes," and the way she threw her arms around me— it
+              her whispered "yes," and the way she threw her arms around me it
               was everything I had dreamed of and more. That evening, we didn't
               just get engaged; we promised each other a lifetime of love,
               laughter, and endless adventures together.
@@ -143,7 +143,7 @@ const Story = () => {
           <div className="md:w-1/2">
             <p className="text-base leading-relaxed mb-4">
               The moment I finished asking the question, time seemed to freeze.
-              Doris's eyes filled with tears—the good kind that sparkle like
+              Doris's eyes filled with tears,the good kind that sparkle like
               diamonds in the fading sunlight. For what felt like an eternity,
               she just stared at me, and I could see her processing the
               magnitude of what I had just asked.
@@ -151,7 +151,7 @@ const Story = () => {
             <p className="text-base leading-relaxed">
               Then, without saying a word, she threw her arms around me with
               such force that we nearly tumbled over together. Her embrace was
-              everything—relief, joy, love, and promise all wrapped into one
+              everything relief, joy, love, and promise all wrapped into one
               perfect moment. I could feel her heart racing against mine, and I
               knew that whatever her answer would be, this hug said everything.
             </p>
@@ -162,13 +162,13 @@ const Story = () => {
               minutes, holding each other as the reality of the moment washed
               over us. She was laughing and crying at the same time, and
               honestly, so was I. It was messy and beautiful and absolutely
-              perfect—just like our love story.
+              perfect just like our love story.
             </p>
             <p className="text-base leading-relaxed">
               When she finally pulled back to look at me, her face was glowing
               with pure happiness. Her smile was brighter than any sunset, more
               beautiful than any ring I could have chosen. In that embrace, I
-              felt our future beginning—two hearts deciding to beat as one for
+              felt our future beginning two hearts deciding to beat as one for
               the rest of our lives.
             </p>
           </div>

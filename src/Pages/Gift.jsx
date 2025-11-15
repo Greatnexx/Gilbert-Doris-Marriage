@@ -47,7 +47,7 @@ const Gift = () => {
       </section>
 
       {/* Ways to Support Section */}
-      <section className="bg-gray-50 py-16 px-4">
+      <section className="bg-gray-100 py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h3 className="text-2xl md:text-3xl font-bold mb-8 text-gray-800">
             WAYS TO SUPPORT US
@@ -162,7 +162,7 @@ const Gift = () => {
                     </div>
                   )}
 
-                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-4">
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg lg:p-4 mt-4">
                     <p className="text-blue-800 text-sm">
                       <strong>💡 Tip:</strong> Please include{" "}
                       <em>"Wedding Gift - Gilbert & Doris"</em> in the transfer

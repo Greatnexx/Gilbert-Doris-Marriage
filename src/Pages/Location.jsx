@@ -27,16 +27,16 @@ const Location = () => {
         </div>
       </section>
 
-      <div className="flex flex-col md:flex-row container mx-auto py-20">
+      <div className="flex flex-col md:flex-row container mx-auto py-20 px-4 gap-8">
         <LocationCard
-          image="assets/images/location-1.jpg"
+          image="/assets/images/catholic1.webp"
           title="CEREMONY LOCATION"
           subtitle="St. Sylvester’s parish, Olachagbaha Otukpa Benue state"
           description="St. Sylvester’s parish is a beautiful venue for the wedding ceremony.
           It features stunning architecture and a serene atmosphere, perfect for exchanging vows."
         />
         <LocationCard
-          image="assets/images/location-1.jpg"
+          image="/assets/images/luckyChild.jpg"
           title="RECEPTION LOCATION"
           subtitle="Lucky child international Nursery and Primary School"
           description="A fantastic venue for the wedding reception.

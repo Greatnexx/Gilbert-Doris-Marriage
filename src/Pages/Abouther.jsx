@@ -24,7 +24,7 @@ const Abouther = () => {
               <div className="flex justify-center">
                 <div className="w-full md:w-6/12 text-center mb-12">
                   <h1 className="text-white text-4xl md:text-6xl font-bold">
-                    DORIS GILBERT
+                    DORIS ABUTU
                   </h1>
 
                   <div className="flex items-center justify-center gap-4 mb-4">
@@ -73,8 +73,7 @@ const Abouther = () => {
             <div className="md:flex md:space-x-8 space-y-8 md:space-y-0 md:px-[80px]">
               <div className="">
                 <p className="mb-4">
-                  <strong>I'm Doris Idoko.</strong> A dreamer, a believer, and
-                  a woman who thought she understood love—until Gilbert walked into
+                  <strong>I'm Doris Abutu.</strong> A woman who thought she understood love until Gilbert walked into
                   my life and redefined everything. He didn't just capture my
                   heart; he awakened parts of my soul I never knew existed.
                 </p>

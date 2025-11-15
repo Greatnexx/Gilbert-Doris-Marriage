@@ -1,38 +1,46 @@
 export const groomsmenData = [
   {
-    name: "JAMES",
-    title: "BEST MAN",
-    image: "/assets/images/elon.jpeg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    name: "ATEH",
+    image: "/assets/images/groomsen/Ateh.jpeg",
   },
   {
-    name: "JACOB",
-    title: "BEST FRIEND",
-    image: "/assets/images/elon.jpeg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    name: "OCHE",
+    image: "/assets/images/groomsen/Oche.jpeg",
   },
   {
-    name: "EHTAN HENRY",
-    title: "ROOM MATE",
-    image: "/assets/images/elon.jpeg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    name: "DONNY",
+    image: "/assets/images/groomsen/Donny.jpeg",
   },
   {
-    name: "WILLIAM CHLOE",
-    title: "COLLEGE FRIEND",
-    image: "/assets/images/elon.jpeg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    name: "EMMANUEL",
+    image: "/assets/images/groomsen/Guy.jpeg",
   },
   {
-    name: "SAMUEL LUKE",
-    title: "BROTHER",
-    image: "/assets/images/elon.jpeg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    name: "INAS",
+    image: "/assets/images/groomsen/Inas.jpeg",
   },
   {
-    name: "HUDSON",
-    title: "FUTURE BROTHER IN LAW",
-    image: "/assets/images/elon.jpeg",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    name: "YOKE BREAKER",
+    image: "/assets/images/groomsen/Yokebreaker.jpeg",
+  },
+  {
+    name: "JOHN",
+    image: "/assets/images/groomsen/guy2.jpeg",
+  },
+  {
+    name: "AUSTINE",
+    image: "/assets/images/groomsen/guy3.jpeg",
+  },
+  {
+    name: "KERIAN",
+    image: "/assets/images/groomsen/Thia.jpeg",
+  },
+  {
+    name: "DANNY",
+    image: "/assets/images/groomsen/Daniel.jpeg",
+  },
+  {
+    name: "DIRECTOR",
+    image: "/assets/images/groomsen/Director.jpeg",
   },
 ];
