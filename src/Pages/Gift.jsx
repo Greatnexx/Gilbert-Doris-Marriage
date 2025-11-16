@@ -14,8 +14,8 @@ const Gift = () => {
 
   const bankDetails = {
     bankName: "First Bank of Nigeria",
-    accountName: "Gilbert Idoko",
-    accountNumber: "3012345678",
+    accountName: "IDOKO GILBERT OWOICHO",
+    accountNumber: "3099901135",
   };
 
   const copyToClipboard = (text, field) => {
