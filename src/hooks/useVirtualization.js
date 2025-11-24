@@ -1,9 +1,9 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState,  useMemo } from 'react';
 
 // Virtual scrolling hook for large galleries
 export const useVirtualization = (items, itemHeight = 300, containerHeight = 600) => {
   const [scrollTop, setScrollTop] = useState(0);
-  const [containerRef, setContainerRef] = useState(null);
+
 
   const visibleItems = useMemo(() => {
     if (!items.length) return [];
@@ -31,7 +31,7 @@ export const useVirtualization = (items, itemHeight = 300, containerHeight = 600
     visibleItems,
     totalHeight,
     handleScroll,
-    containerRef: setContainerRef,
+
   };
 };
 

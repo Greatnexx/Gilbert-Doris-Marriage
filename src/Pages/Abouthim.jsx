@@ -1,5 +1,4 @@
 import { Quote, } from "lucide-react";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import Footer from "../Components/Footer";
 
 const Abouthim = () => {

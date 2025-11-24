@@ -8,7 +8,7 @@ export const usePerformanceMonitor = (componentName) => {
     const endTime = performance.now();
     const loadTime = endTime - startTimeRef.current;
     
-    if (process.env.NODE_ENV === 'development') {
+    if (import.meta.env?.DEV) {
       console.log(`${componentName} loaded in ${loadTime.toFixed(2)}ms`);
     }
   }, [componentName]);
@@ -20,7 +20,7 @@ export const usePerformanceMonitor = (componentName) => {
     markEnd: (label) => {
       const endTime = performance.now();
       const duration = endTime - startTimeRef.current;
-      if (process.env.NODE_ENV === 'development') {
+      if (import.meta.env?.DEV) {
         console.log(`${label}: ${duration.toFixed(2)}ms`);
       }
       return duration;

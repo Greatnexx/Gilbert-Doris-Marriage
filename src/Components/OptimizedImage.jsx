@@ -51,8 +51,7 @@ const OptimizedImage = ({
     onError?.(e);
   };
 
-  // Use original source without WebP conversion
-  const webpSrc = src;
+
 
   return (
     <div 
