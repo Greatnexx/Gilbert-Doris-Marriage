@@ -41,13 +41,10 @@ export default function Footer({image,position}) {
         </div>
         <div className="text-center text-gray-500 text-sm pb-4">
           Designed by{" "}
-          <a
-            href="https://www.yourdesignagency.com"
-            className="text-red-500 hover:underline"
-          >
+      
             {" "}
             Danny's Global
-          </a>
+          
         </div>
       </div>
     </footer>

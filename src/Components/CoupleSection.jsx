@@ -117,7 +117,7 @@ export default function CoupleSection() {
               <div className="text-center lg:text-left">
                 <p className="text-gray-700 leading-relaxed">
                   <strong className="text-2xl font-['Pacifico'] text-red-500 block mb-4 transform rotate-2">
-                    I'm Doris Owie
+                    I'm Doris Abutu
                   </strong>
                   A lover of laughter, kindness, and all things beautiful. When
                   I met Gilbert, I found not just a partner, but my best friend,

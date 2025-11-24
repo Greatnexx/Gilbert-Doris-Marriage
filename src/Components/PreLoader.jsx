@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 // Note: This assumes you have framer-motion installed
 // If not available, I've included CSS animation fallbacks
-const Preloader = ({ onComplete, duration = 4000 }) => {
+const Preloader = ({ onComplete, duration = 2500 }) => {
   const [progress, setProgress] = useState(0);
   const [currentText, setCurrentText] = useState(0);
   const [showHearts, setShowHearts] = useState(false);
@@ -10,8 +10,7 @@ const Preloader = ({ onComplete, duration = 4000 }) => {
 
   const loadingTexts = [
     "D & G",
-    "Loading Love...",
-    "Almost Ready...",
+    "Getting Ready...",
     "Welcome to Our Story",
   ];
 
