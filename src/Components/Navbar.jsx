@@ -56,7 +56,7 @@ const Navbar = () => {
                     ABOUT
                   </button>
                   {aboutDropdown && (
-                    <div className="absolute top-full left-0 mt-1 w-48 lg:w-30 bg-white shadow-lg rounded-b-md overflow-hidden">
+                    <div className="absolute top-full left-0 w-48 lg:w-30 bg-white shadow-lg rounded-b-md overflow-hidden">
                       <div className="bg-rose-500 text-white px-4 lg:px-6 py-2 lg:py-3 text-xs lg:text-sm font-medium flex items-center">
                         ABOUT
                         <Heart className="w-3 h-3 lg:w-4 lg:h-4 ml-2" />
@@ -130,7 +130,7 @@ const Navbar = () => {
                     THE WEDDING
                   </button>
                   {weddingDropdown && (
-                    <div className="absolute top-full right-0 left-0 mt-1 w-48 lg:w-30 bg-white shadow-lg rounded-b-md overflow-hidden">
+                    <div className="absolute top-full right-0 left-0 w-48 lg:w-30 bg-white shadow-lg rounded-b-md overflow-hidden">
                       <div className="bg-rose-500 text-white px-4 lg:px-6 py-2 lg:py-3 text-xs lg:text-sm font-medium flex items-center">
                         THE WEDDING
                         <Heart className="w-3 h-3 lg:w-4 lg:h-4 ml-2" />
