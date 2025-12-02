@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import QRCode from "qrcode";
 import { toPng, toJpeg } from "html-to-image";
 import jsPDF from "jspdf";
-import logo from "/assets/images/doris.jpg"; // Ensure logo exists
+
 
 const QrCode= () => {
   const [input, setInput] = useState("");
@@ -20,22 +20,7 @@ const QrCode= () => {
       scale: 10, // increases sharpness
     });
 
-    const ctx = canvas.getContext("2d");
-    if (ctx) {
-      const logoImg = new Image();
-      logoImg.src = logo;
-      logoImg.onload = () => {
-        const size = 50; // increase logo size for HD canvas
-        ctx.drawImage(
-          logoImg,
-          canvas.width / 2 - size / 2,
-          canvas.height / 2 - size / 2,
-          size,
-          size
-        );
-        setQrImage(canvas.toDataURL("image/png", 1.0));
-      };
-    }
+    setQrImage(canvas.toDataURL("image/png", 1.0));
   };
 
   /**

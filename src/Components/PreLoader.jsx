@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 // Note: This assumes you have framer-motion installed
 // If not available, I've included CSS animation fallbacks
-const Preloader = ({ onComplete, duration = 2500 }) => {
+const Preloader = ({ onComplete, duration = 1500 }) => {
   const [progress, setProgress] = useState(0);
   const [currentText, setCurrentText] = useState(0);
   const [showHearts, setShowHearts] = useState(false);
@@ -146,9 +146,8 @@ const Preloader = ({ onComplete, duration = 2500 }) => {
             <img
               src="/assets/images/gallery14.jpg"
               alt="D & G"
-              loading="lazy"
-              className="w-full h-full object-cover animate-pulse"
-              style={{ animationDuration: "2s" }}
+              loading="eager"
+              className="w-full h-full object-cover"
               onError={(e) => {
                 e.target.style.display = "none";
                 e.target.nextSibling.style.display = "flex";
